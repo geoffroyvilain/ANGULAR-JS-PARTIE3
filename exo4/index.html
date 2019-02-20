@@ -7,8 +7,8 @@
     <script src="assets/js/script.js"></script>
   </head>
   <body>
-    <div>
-      {{ pi | number : 2 }} €
+    <div>  <!-- pour faire apparaitre le sigle € a la fin, il faut ajouter un module de traduction  -->
+      {{ pi | currency : '€'}}
     </div>
   </body>
 </html>

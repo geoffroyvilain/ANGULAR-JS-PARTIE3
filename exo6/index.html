@@ -7,8 +7,10 @@
     <script src="assets/js/script.js"></script>
   </head>
   <body>
-    <div>
-      {{article | limitTo : 150 | uppercase}}
+    <div>  <!-- limitTo pour limiter le nombre de caractères à afficher (ex : résumé article + lire la suite ) -->
+      <!-- ici: 2 pipes | pour cumuler les filtres
+                on limite à 150 et on demande de le mettre en majuscule   -->
+      {{ article | limitTo : 150 | uppercase }}
     </div>
   </body>
 </html>

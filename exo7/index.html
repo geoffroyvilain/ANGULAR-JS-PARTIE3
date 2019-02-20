@@ -14,12 +14,14 @@
       <th>Modèle</th>
       <th>Marque</th>
     </thead>
-    <tr ng-repeat="phone in phones | orderBy: 'phoneModel'">
+    <!-- ng repeat pour parcourir tout le tableau -->
+    <!--    "mots clés + in + nom tableau | ordonné par phoneModel -->
+    <tr ng-repeat="phone in phones | orderBy: 'phoneModel'"> <!-- Devant 'phoneModel, on peut mettre + pour forcer ou - pour l'inverse de l'ordre  alpha -->
       <td>
-        {{ phone.phoneModel }}
+        {{ phone.phoneModel }} <!-- expression à faire apparaitre -->
       </td>
       <td>
-        {{phone.brand}}
+        {{phone.brand}} <!-- expression à faire apparaitre -->
       </td>
     </tr>
   </table>
